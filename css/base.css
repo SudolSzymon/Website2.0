@@ -1,0 +1,229 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    --color-text: #fff;
+    --color-bg: #191818;
+    --color-card: #292b2b;
+    --color-topnav: #2c3032;
+    --color-link: #484848;
+    --color-link-hover: #fff;
+    --color-menu: #fff;
+    --color-menu-hover: #9898a1;
+    --font-menu: arial;
+    --font-size-menu: 9.5vw;
+    --font-weight-menu: 900;
+    --ttransfrom-menu: uppercase;
+    --thickness-deco: 40px;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-link);
+    outline: none;
+}
+
+a:hover,
+a:focus {
+    color: var(--color-link-hover);
+    outline: none;
+}
+
+main {
+    padding: 3rem 5rem 0;
+}
+
+.frame {
+    text-align: center;
+    margin-bottom: 20vh;
+    font-weight: bold;
+}
+
+.frame > *:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.frame__title {
+    font-size: 1rem;
+    margin: 0 0 0.25rem;
+}
+
+.frame__links > *:not(:last-child),
+.frame__demos > *:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.frame__demo--current,
+.frame__demo--current:hover {
+    color: var(--color-text);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+}
+
+.menu__link {
+    padding-bottom: 0.5rem;
+    margin-bottom: 2.5rem;
+    font-size: var(--font-size-menu);
+    font-weight: var(--font-weight-menu);
+    font-family: var(--font-menu);
+    position: relative;
+    line-height: 1;
+    color: var(--color-menu);
+    text-transform: var(--ttransfrom-menu);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.menu__link:hover {
+    color: var(--color-menu-hover);
+    -webkit-text-fill-color: var(--color-menu-hover);
+}
+
+.menu__link {
+    letter-spacing: -0.85vw;
+    padding-right: 0.85vw;
+}
+
+.topnav {
+    background-color: var(--color-topnav);
+    overflow: hidden;
+    height: 50px;
+}
+
+.topnav a {
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: var(--font-menu);
+    color: var(--color-menu);
+}
+
+.topnav a:hover {
+    color: var(--color-menu-hover);
+}
+
+.topnav a.active {
+    color: var(--color-menu-hover);
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.job_value {
+    padding: 0 0 0 20px;
+    margin: 0;
+    float: right;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.job_description {
+    padding: 0;
+    margin: 0;
+    float: left;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.job_tittle {
+    padding: 0;
+    margin: 0;
+    float: left;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.job_entry {;
+    clear: both;
+}
+
+.job {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: var(--color-card);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.job:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+meter.scale {
+    float: right;
+    width: 75%;
+}
+
+span.scale {
+}
+
+div.background-card {
+    padding: 30px;
+    width: 1200px;
+    height: 600px;
+    background-color: var(--color-card);
+}
+
+a.contact {
+    color: #adcbff;
+    text-decoration: none; /* no underline */
+}
+
+@media screen and (min-width: 53em) {
+    .frame {
+        width: 100%;
+        text-align: left;
+        display: flex;
+        align-items: start;
+    }
+
+    .frame__demos {
+        margin-left: auto;
+    }
+
+    .frame > *:not(:last-child) {
+        margin: 0 2rem 0 0;
+        display: inline-block;
+    }
+
+}

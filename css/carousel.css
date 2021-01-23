@@ -1,0 +1,35 @@
+
+.carousel {
+    background: var(--color-bg);
+    outline: none;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.carousel-cell {
+    margin: 20px;
+    width: 50%;
+    height: 450px;
+    /* flex-box, center image in cell */
+    display: -webkit-box;
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.flickity-prev-next-button {
+  display: none;
+}
+
+/* position dots in gallery */
+.flickity-page-dots {
+   display: none;
+}
+/* white circles */
+.flickity-page-dots .dot {
+  display: none;
+}
